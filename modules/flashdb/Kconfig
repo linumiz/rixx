@@ -1,0 +1,30 @@
+# Copyright (c) 2024 Linumiz
+# SPDX-License-Identifier: Apache-2.0
+
+config ZEPHYR_FLASHDB_MODULE
+	bool
+
+config FLASHDB
+	bool "Flashdb Database"
+	depends on POSIX_FILE_SYSTEM
+	depends on POSIX_THREADS
+	help
+	 This option enables flashdb database support.
+
+if FLASHDB
+
+config FLASHDB_TIMESERIES
+	bool "Flashdb Time series"
+	help
+	 This option enables flashdb time series mode.
+
+config FLASHDB_KEYVALUE
+	bool "Flashdb Key value"
+	help
+	 This option enables flashdb key value mode.
+
+config FLASHDB_DEBUG_ENABLE
+	bool "Enable Flashdb debug"
+	help
+	 This option enables flashdb debug message.
+endif
