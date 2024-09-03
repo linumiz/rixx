@@ -1,0 +1,18 @@
+# Copyright (c) Linumiz 2024
+
+manifest:
+
+  remotes:
+    - name: rixx
+      url-base: https://github.com/linumiz
+
+    - name: zephyr
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+# zephyr
+    - name: zephyr
+      remote: zephyr
+      revision: main
+      path: zephyr
+      import: true
