@@ -16,3 +16,10 @@ manifest:
       revision: main
       path: zephyr
       import: true
+
+# rixx sdk modules
+    # FlashDB
+    - name: flashdb
+      remote: rixx
+      revision: zephyr
+      path: modules/lib/flashdb
