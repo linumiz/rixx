@@ -23,3 +23,9 @@ manifest:
       remote: rixx
       revision: zephyr
       path: modules/lib/flashdb
+
+   #json-c
+    - name: json-c
+      remote: rixx
+      revision: dev/zephyr
+      path: modules/lib/json-c
