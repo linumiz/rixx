@@ -9,6 +9,9 @@ manifest:
     - name: zephyr
       url-base: https://github.com/zephyrproject-rtos
 
+    - name: flashDB
+      url-base: https://github.com/armink
+
   projects:
 # zephyr
     - name: zephyr
@@ -19,9 +22,9 @@ manifest:
 
 # rixx sdk modules
     # FlashDB
-    - name: flashdb
-      remote: rixx
-      revision: zephyr
+    - name: FlashDB
+      remote: flashDB
+      revision: 523fd2052d13baf72fd1d8e177c2a162a03392be
       path: modules/lib/flashdb
 
    #json-c
