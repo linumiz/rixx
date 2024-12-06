@@ -62,9 +62,9 @@ so you need to enable the **POSIX file system API support** with following decla
 	CONFIG_FS_LITTLEFS_FMP_DEV=y
 	
 	#POSIX Configs
-    CONFIG_POSIX_API=y
-    CONFIG_POSIX_FILE_SYSTEM=y
-    CONFIG_POSIX_THREADS=y
+	CONFIG_POSIX_API=y
+	CONFIG_POSIX_FILE_SYSTEM=y
+	CONFIG_POSIX_THREADS=y
 
 	#in case you want to use file system in external falsh
 	CONFIG_PM_PARTITION_REGION_LITTLEFS_EXTERNAL=y
